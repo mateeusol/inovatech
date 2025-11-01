@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira de Ciência - Faculdade</title>
+    <meta name="description" content="Apresentação do nosso trabalho na Feira de Ciência da Faculdade">
+
+    <!-- Importa TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Importa Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Configuração personalizada do Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#1e40af",
+                        secondary: "#3b82f6",
+                        accent: "#f59e0b"
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Arquivos CSS customizados -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="min-h-screen bg-gray-50">
+
+    <!-- Header com menu desktop e mobile -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <i class="fas fa-flask text-primary text-2xl"></i>
+                    <h1 class="text-xl font-bold text-gray-800">Inovatech</h1>
+                </div>
+
+                <!-- Menu Desktop -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="nav-link">Início</a>
+                    <a href="#sobre" class="nav-link">Sobre o Trabalho</a>
+                    <a href="#equipe" class="nav-link">Nossa Equipe</a>
+                    <a href="#resultados" class="nav-link">Resultados</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </div>
+
+                <!-- Botão Menu Mobile -->
+                <button class="md:hidden" id="mobile-menu-button">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <!-- Menu Mobile (escondido inicialmente) -->
+            <div class="md:hidden hidden mt-4 space-y-4" id="mobile-menu">
+                <a href="#inicio" class="block nav-link">Início</a>
+                <a href="#sobre" class="block nav-link">Sobre o Trabalho</a>
+                <a href="#equipe" class="block nav-link">Nossa Equipe</a>
+                <a href="#resultados" class="block nav-link">Resultados</a>
+                <a href="#contato" class="block nav-link">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="inicio" class="py-16 bg-gradient-to-r from-primary to-secondary text-white">
+            <div class="container mx-auto px-4 text-center max-w-4xl">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Bem-vindo à Nossa Apresentação</h2>
+                <p class="text-xl mb-8 opacity-90">Explore nosso projeto inovador desenvolvido para o inovatech</p>
+            </div>
+        </section>
+
+        <!-- Sobre o trabalho -->
+        <section class="py-16 bg-white" id="sobre">
+            <div class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Foto da turma -->
+                <div class="relative">
+                    <img src="img/bet.jpg" alt="Foto da turma" class="w-full rounded-2xl shadow-2xl" loading="lazy"/>
+                    <div class="absolute -bottom-4 -right-4 bg-accent text-white px-6 py-3 rounded-lg shadow-lg">
+                        <p class="font-semibold">Projeto</p>
+                    </div>
+                </div>
+
+                <!-- Texto -->
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-6">Sobre Nosso Projeto</h3>
+                    <div class="space-y-4 text-gray-600">
+                        <p>Apresentamos nosso trabalho desenvolvido para a Feira de Ciência, resultado de meses de dedicação e pesquisa.</p>
+                        <p>O objetivo é mostrar como a ciência pode resolver problemas reais e contribuir para o avanço do conhecimento.</p>
+                        <p>O site permite conhecer nossa metodologia, resultados e equipe do projeto.</p>
+                    </div>
+
+                    <!-- Tags -->
+                    <div class="mt-8 flex flex-wrap gap-4">
+                        <span class="bg-primary text-white px-4 py-2 rounded-full text-sm font-medium">Inovação</span>
+                        <span class="bg-secondary text-white px-4 py-2 rounded-full text-sm font-medium">Pesquisa</span>
+                        <span class="bg-accent text-white px-4 py-2 rounded-full text-sm font-medium">Equipe</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards -->
+        <section class="py-16 bg-gray-100" id="resultados">
+            <div class="container mx-auto px-4">
+                <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">Conheça Nossa Jornada</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card Sobre -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 text-center">
+                        <i class="fas fa-book-open text-primary text-4xl mb-4"></i>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Sobre o Trabalho</h4>
+                        <p class="text-gray-600">Detalhes sobre metodologia, objetivos e abordagem científica.</p>
+                    </div>
+
+                    <!-- Card Equipe -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 text-center">
+                        <i class="fas fa-users text-secondary text-4xl mb-4"></i>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">turma</h4>
+                        <p class="text-gray-600">Conheça </p>
+                    </div>
+
+                    <!-- Card Resultados -->
+                    <div class="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300 text-center">
+                        <i class="fas fa-chart-line text-accent text-4xl mb-4"></i>
+                        <h4 class="text-xl font-bold text-gray-800 mb-3">Impactos sociais</h4>
+                        <p class="text-gray-600">A musica transformando vidas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <h4 class="text-xl font-bold mb-4">INOVATECH - Faculdade</h4>
+                <p class="text-gray-300 mb-4">Projeto desenvolvido com dedicação e paixão pela ciência.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook text-xl"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                    <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h5 class="font-semibold mb-4">Links Rápidos</h5>
+                <ul class="space-y-2 text-gray-300">
+                    <li><a href="#inicio" class="hover:text-white">Início</a></li>
+                    <li><a href="#sobre" class="hover:text-white">Sobre</a></li>
+                    <li><a href="#equipe" class="hover:text-white">Equipe</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-semibold mb-4">Contato</h5>
+                <ul class="space-y-2 text-gray-300">
+                    <li><i class="fas fa-envelope mr-2"></i>equipe@feiraciencia.edu</li>
+                    <li><i class="fas fa-phone mr-2"></i>(11) 9999-9999</li>
+                    <li><i class="fas fa-map-marker-alt mr-2"></i>Faculdade de Ciências</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            &copy; 2025 INOVATECH - Todos os direitos reservados
+        </div>
+    </footer>
+
+    <!-- Script externo -->
+    <script src="js/script.js"></script>
+</body>
+</html>

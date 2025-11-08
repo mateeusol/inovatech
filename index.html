@@ -8,16 +8,13 @@
       name="description"
       content="Apresentação do nosso trabalho na Feira de Ciência da Faculdade"
     />
-
     <!-- Importa TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- Importa Font Awesome para ícones -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
     <!-- Configuração personalizada do Tailwind -->
     <script>
       tailwind.config = {
@@ -32,7 +29,6 @@
         },
       };
     </script>
-
     <!-- Arquivos CSS customizados -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -43,12 +39,14 @@
       <nav class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
           <!-- Logo -->
-<div class="flex items-center space-x-2">
-  <img src="img/flauta5.png" alt="Logo Flauta" class="w-10 h-10 object-contain">
-  <h1 class="text-xl font-bold text-gray-800">FAIAM</h1>
-</div>
-
-
+          <div class="flex items-center space-x-2">
+            <img
+              src="img/flauta.png"
+              alt="Logo Flauta"
+              class="w-10 h-10 object-contain"
+            />
+            <h1 class="text-xl font-bold text-gray-800">FAIAM</h1>
+          </div>
           <!-- Menu Desktop -->
           <div class="hidden md:flex space-x-8">
             <a href="#inicio" class="nav-link">Início</a>
@@ -56,13 +54,11 @@
             <a href="#equipe" class="nav-link">Nossa Equipe</a>
             <a href="#resultados" class="nav-link">Impacto Social</a>
           </div>
-
           <!-- Botão Menu Mobile -->
           <button class="md:hidden" id="mobile-menu-button">
             <i class="fas fa-bars text-xl"></i>
           </button>
         </div>
-
         <!-- Menu Mobile (escondido inicialmente) -->
         <div class="md:hidden hidden mt-4 space-y-4" id="mobile-menu">
           <a href="#inicio" class="block nav-link">Início</a>
@@ -73,7 +69,6 @@
         </div>
       </nav>
     </header>
-
     <main>
       <!-- Hero -->
       <section
@@ -87,7 +82,6 @@
           </p>
         </div>
       </section>
-
       <!-- Sobre o trabalho -->
       <section class="py-16 bg-white" id="sobre">
         <div
@@ -107,7 +101,6 @@
               <p class="font-semibold">Projeto</p>
             </div>
           </div>
-
           <!-- Texto -->
           <div>
             <h3 class="text-3xl font-bold text-gray-800 mb-6">
@@ -150,7 +143,6 @@
                 social podem se unir para construir um futuro mais inclusivo.
               </p>
             </div>
-
             <!-- Tags -->
             <div class="mt-8 flex flex-wrap gap-4">
               <span
@@ -169,63 +161,63 @@
           </div>
         </div>
       </section>
-
-<!-- Cards -->
-<section class="py-16 bg-gray-100" id="resultados">
-  <div class="container mx-auto px-4">
-    <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">
-      Conheça Nossa Jornada
-    </h3>
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-      <!-- Card Sobre -->
-      <div class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-xl hover:border-2 hover:border-primary">
-        <i class="fas fa-book-open text-primary text-4xl mb-4"></i>
-        <h4 class="text-xl font-bold text-gray-800 mb-3">Sobre o Trabalho</h4>
-        <p class="text-gray-600">
-          Detalhes sobre metodologia, objetivos e abordagem científica.
-        </p>
-      </div>
-
-      <!-- Card Equipe -->
-      <div class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-xl hover:border-2 hover:border-secondary">
-        <i class="fas fa-users text-secondary text-4xl mb-4"></i>
-        <h4 class="text-xl font-bold text-gray-800 mb-3">Turma</h4>
-        <p class="text-gray-600">Conheça nossa equipe e jornada.</p>
-      </div>
-
-      <!-- Card Impacto Social -->
-      <div class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-xl hover:border-2 hover:border-accent">
-        <i class="fas fa-chart-line text-accent text-4xl mb-4"></i>
-        <h4 class="text-xl font-bold text-gray-800 mb-3">Impacto Social</h4>
-        <p class="text-gray-600 mb-6">
-          A música transformando vidas através da inclusão e da tecnologia assistiva.
-        </p>
-        <a
-          href="impactos.html"
-          class="inline-block bg-accent text-white font-semibold px-6 py-2 rounded-full hover:bg-accent-dark transition-colors duration-300"
-        >
-          Conheça a pesquisa
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+      <!-- Cards -->
+      <section class="py-16 bg-gray-100" id="resultados">
+        <div class="container mx-auto px-4">
+          <h3 class="text-3xl font-bold text-center text-gray-800 mb-12">
+            Conheça Nossa Jornada
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Card Sobre -->
+            <div
+              class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-xl hover:border-2 hover:border-primary"
+            >
+              <i class="fas fa-book-open text-primary text-4xl mb-4"></i>
+              <h4 class="text-xl font-bold text-gray-800 mb-3">
+                Sobre o Trabalho
+              </h4>
+              <p class="text-gray-600">
+                Detalhes sobre metodologia, objetivos e abordagem científica.
+              </p>
+            </div>
+            <!-- Card Equipe -->
+            <div
+              class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-xl hover:border-2 hover:border-secondary"
+            >
+              <i class="fas fa-users text-secondary text-4xl mb-4"></i>
+              <h4 class="text-xl font-bold text-gray-800 mb-3">Turma</h4>
+              <p class="text-gray-600">Conheça nossa equipe e jornada.</p>
+            </div>
+            <!-- Card Impacto Social -->
+            <div
+              class="bg-white rounded-2xl shadow-lg p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:shadow-xl hover:border-2 hover:border-accent"
+            >
+              <i class="fas fa-chart-line text-accent text-4xl mb-4"></i>
+              <h4 class="text-xl font-bold text-gray-800 mb-3">
+                Impacto Social
+              </h4>
+              <p class="text-gray-600 mb-6">
+                A música transformando vidas através da inclusão e da tecnologia
+                assistiva.
+              </p>
+              <a
+                href="impactos.html"
+                class="inline-block bg-accent text-white font-semibold px-6 py-2 rounded-full hover:bg-accent-dark transition-colors duration-300"
+              >
+                Conheça a pesquisa
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-
     <!-- Footer simples -->
     <footer class="bg-gray-900 text-white py-6 text-center">
       <div class="text-gray-400">
         &copy; 2025 INOVATECH - Todos os direitos reservados
       </div>
     </footer>
-
     <!-- Script externo -->
     <script src="js/script.js"></script>
   </body>
 </html>
-
-
